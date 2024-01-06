@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416" prefWidth="640" styleClass="">
+  <children>
+    <TextField alignment="CENTER_LEFT" editable="true" focusTraversable="true" id="edit" layoutX="8" layoutY="336" prefColumnCount="12" prefHeight="32" prefWidth="624" promptText="Задайте вопрос:" styleClass="text-input text-field " text="">
+      <font>
+        <Font name="System Regular" size="15"/>
+      </font>
+    </TextField>
+    <Data cursor="DEFAULT" enabled="1" id="data-edit" visible="1"/>
+    <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="button" layoutX="488" layoutY="376" prefHeight="32" prefWidth="144" styleClass="button " text="получить ответ" textAlignment="CENTER" underline="false" wrapText="true">
+      <font>
+        <Font name="System Regular" size="15"/>
+      </font>
+    </Button>
+    <Data cursor="DEFAULT" enabled="1" id="data-button" visible="1"/>
+    <TextArea editable="true" focusTraversable="true" id="textArea" layoutX="8" layoutY="8" prefColumnCount="40" prefHeight="320" prefWidth="624" promptText="Ответ от ChatGPT" styleClass="text-input text-area " text="" wrapText="true">
+      <font>
+        <Font name="System Regular" size="15"/>
+      </font>
+    </TextArea>
+    <Data cursor="DEFAULT" enabled="1" id="data-textArea" visible="1"/>
+    <PasswordField alignment="CENTER_LEFT" editable="true" focusTraversable="true" id="passwordField" layoutX="8" layoutY="376" prefColumnCount="12" prefHeight="32" prefWidth="472" promptText="API KEY" text="">
+      <font>
+        <Font name="System Regular" size="15"/>
+      </font>
+      <styleClass xmlns:fx="http://javafx.com/fxml">
+        <String fx:value="text-input"/>
+        <String fx:value="text-field"/>
+        <String fx:value="password-field"/>
+      </styleClass>
+    </PasswordField>
+    <Data cursor="DEFAULT" enabled="1" id="data-passwordField" visible="1"/>
+  </children>
+</AnchorPane>
